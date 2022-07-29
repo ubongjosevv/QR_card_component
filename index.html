@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,700&family=Montserrat:wght@500;700&family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+    <title>QR code component</title>
+    <style>
+        body {
+           background: hsl(212, 45%, 89%);
+        }
+
+        .container {
+            background: hsl(0, 0%, 100%);
+            height: 600px;
+            width: 376.7px;
+            text-align: center;
+            margin: auto;
+            margin-top: 50px;
+            border-radius: 10px;
+            font-family: 'Outfit', sans-serif;
+        }
+
+        .qr-code img {
+            width: 350px;
+            margin-top: 13px;
+            border-radius: 10px;
+        }
+
+        #box {
+            font-size: 15px;
+        }
+
+        .box-2 {
+            color: hsl(212, 45%, 89%);
+            
+        }
+
+        @media screen and (max-width: 375px) {
+            body {
+                padding: 10px;
+            }
+            .container {
+                width: 250px;
+            }
+            .qr-code img {
+            width: 230px;
+            margin-top: 13px;
+            border-radius: 10px;
+            }
+            #box {
+            font-size: 15px;
+            padding: 10px;
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="qr-code">
+            <img src="image-qr-code.png" alt="qr-code">
+        </div>
+        <div class="box-1" id="box">
+            <h1>Improve your front-end skills
+                by building projects
+            </h1>
+        </div>
+        <div class="box-2" id="box">
+            <h3>Scan the QR code to visit Frontend
+                and take your coding skills to the next level
+            </h3>
+        </div>
+    </div>
+</body>
+</html>
